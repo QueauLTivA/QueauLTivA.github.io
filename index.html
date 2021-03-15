@@ -6,6 +6,8 @@
     <body>
       <label for = "name">Name</label>
       <input type="text" id ="name" name = "user_name">        
+      <label for = "web">Web</label>
+      <input type="text" id ="web" name = "user_web"> 
     </body>
 </html>
 
@@ -16,17 +18,11 @@ function sender(event) {
           var val = document.getElementById('name').value;
           event.source.postMessage(val, event.origin);
         }
-        else {
-            alert(event.data);
-        }
     }
 }
 function receiver(event) {
     if (event.origin == 'http://localhost') {
-       document.getElementById('name').value = event.data;
-    }
-    else {
-        alert(event.data);
+       document.getElementById('web').value = event.data;
     }
 }
 window.addEventListener('message', sender, false);
