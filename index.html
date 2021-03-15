@@ -12,19 +12,13 @@
 </html>
 
 <script>
-function sender(event) {
-    if (event.origin == 'http://localhost') {
-        if (event.data == 'AccountPageV2') {
-          var val = document.getElementById('name').value;
-          event.source.postMessage(val, event.origin);
-        }
-    }
-}
 function receiver(event) {
     if (event.origin == 'http://localhost') {
-       document.getElementById('web').value = event.data;
+          var val = document.getElementById('name').value;
+          event.source.postMessage(val, event.origin);
+        
+          document.getElementById('web').value = event.data;
     }
 }
-window.addEventListener('message', sender, false);
 window.addEventListener('message', receiver, false);
 </script>
