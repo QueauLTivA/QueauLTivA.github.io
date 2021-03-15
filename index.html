@@ -10,7 +10,7 @@
 </html>
 
 <script>
-function receiver(event) {
+function sender(event) {
     if (event.origin == 'http://localhost') {
         if (event.data == 'AccountPageV2') {
           var val = document.getElementById('name').value;
@@ -21,5 +21,13 @@ function receiver(event) {
         }
     }
 }
-window.addEventListener('message', receiver, false);
+function receiver(event) {
+    if (event.origin == 'http://localhost') {
+       document.getElementById('name').value = event.data;
+    }
+    else {
+        alert(event.data);
+    }
+}
+window.addEventListener('message', sender, false);
 </script>
