@@ -48,13 +48,6 @@
                     <label for="email" class="placeholder required">Электронная почта&nbsp;<strong>*</strong>&nbsp;</label> 
                 </div> 
             </div> 
-		
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps">
-                    <input type="text" name="address" value="" placeholder="" id="address" class="pageRequired"> 
-                    <label for="phone" class="placeholder required">Адрес&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div>
-            </div> 
             <button type="submit" value="Submit"> <span>Отправить</span> </button>
 
         </div>
@@ -70,11 +63,10 @@
         fields: {
             "Account": "#name", // Имя посетителя, заполнившего форму
             "Email": "#email", // Email посетителя
-            "Address": "#address", // Адрес посетителя
             "MobilePhone": "#phone" // Телефон посетителя
         },
         landingId: "47ab1c9e-8c21-4fd1-9a7d-b5a1bd3d80b2",
-        serviceUrl: "https://localhost/HomeWork/ServiceModel/GeneratedObjectWebFormService.svc/SaveWebFormObjectData",
+	serviceUrl: "http://192.168.1.211/HomeWork/0/ServiceModel/GeneratedObjectWebFormService.svc/SaveWebFormObjectData",
         redirectUrl: ""
     };
     /**
