@@ -21,7 +21,7 @@
         <div class="container"> 
             <div class="wrap"> 
                 <div class="mainTitle"> 
-                    <h1>Заявка на кредиты для бизнеса</h1> 
+                    <h1>Create new Lead</h1> 
 </div> 
 
 <form class="mainForm" name="landingForm" onsubmit="createObject(); return false" method="post">
@@ -42,230 +42,19 @@
                 </div>	                
             </div> 
 
-            <div class="moduleOnlineFormCredits--content--item w-50">
-                <div class="moduleOnlineFormCredits--content--item--wraps selectArrow">
-                    <select class="pageRequired" id="ownershipForm" name="ownershipForm" required="">
-                        <option selected="" disabled="">Форма собственности</option>
-                        <option value="0">Частный предприниматель</option>
-                        <option value="1">Семейный предприниматель</option>
-                        <option value="2">Дехканское хозяйства (Не имеющий статус юридического лица)</option>
-                        <option value="3">Частное предприятие</option>
-                        <option value="4">Семейное предприятие</option>
-                        <option value="5">Дехканское хозяйства (Имеющий статус юридического лица)</option>
-                        <option value="6">Фермерское хозяйства</option>
-                        <option value="7">Общество с ограниченной ответственностью (ООО)</option>
-                        <option value="8">Совместное предприятие</option>
-                        <option value="9">Иностранное предприятие</option>
-                        <option value="10">Дочерное предприятие</option>
-                        <option value="11">Унитарное предприятие</option>
-                        <option value="12">Акционерное общество</option>
-                    </select>
-                    <label for="ownershipForm" class="placeholder required">Форма собственности&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div>
-            </div> 
- 
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
+             <div class="moduleOnlineFormCredits--content--item w-50"> 
                 <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="tin" value="" placeholder="" id="inn" class="pageRequired">
-                    <label for="inn" class="placeholder required">ИНН&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div>
-            </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <select class="pageRequired" id="mainactivity" name="mainactivity" required=""> <option selected="" disabled="">Вид деятельности</option> 
-	                    <option value="0">Промышленность, производство</option> 
-	                    <option value="1">Сельское хозьяйство</option> 
-	                    <option value="2">Лесное хозяйство</option>
-	                    <option value="3">Транспорт и связь</option> 
-	                    <option value="4">Строительство</option> 
-	                    <option value="5">Торговля</option> 
-	                    <option value="6">Общественное питание</option> 
-	                    <option value="7">Разработка и обеспечение</option> 
-	                    <option value="8">Оказание услуг (сервис)</option> 
-	                    <option value="9">Жилищно-коммунальные услуги</option> 
-	                    <option value="10">Здравоохранение</option> 
-	                    <option value="11">Культура и спорт</option> 
-	                    <option value="12">Образование</option> 
-	                    <option value="13">Наука и научные разработки</option> 
-	                    <option value="14">Финансовые услуги</option> 
-	                    <option value="15">Общественные организации</option> 
-                     </select> 
+                    <input type="email" name="email" value="" placeholder="" class="pageRequired" id="email"> 
+                    <label for="email" class="placeholder required">Электронная почта&nbsp;<strong>*</strong>&nbsp;</label> 
                 </div> 
             </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="headfullname" value="" placeholder="" id="headfullname" class="pageRequired"> 
-                    <label for="headfullname" class="placeholder required">ФИО руководителя&nbsp;&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="data" name="dateofbeginning" value="" placeholder="" id="dateofbeginning" class="pageRequired"> 
-                    <label for="dateofbeginning" class="placeholder required">Год начала предпринимательства&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="avgincomeuzs" value="" placeholder="" id="avgincomeuzs" class="price pageRequired"> 
-                    <label for="avgincomeuzs" class="placeholder required">Средмесячная выручка, полученная через расчетный счет в национальной валюте&nbsp;&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="avgincomeusd" value="" placeholder="" id="avgincomeusd" class="price pageRequired"> 
-                    <label for="avgincomeusd" class="placeholder required">Средмесячная выручка, полученная через расчетный счет в иностранной валюте&nbsp;&nbsp;&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="number" name="numberofemps" value="" placeholder="" id="numberofemps" class="pageRequired"> 
-                    <label for="numberofemps" class="placeholder required">&nbsp;Количество сотрудников&nbsp;<strong>*</strong>&nbsp;</label>
-                </div> 
-            </div> 
-
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="debtuzs" value="" placeholder="" id="debtuzs" class="price pageRequired"> 
-                    <label for="debtuzs" class="placeholder required">Существующий долг по кредиту (лизингу) в банке (в сумах)&nbsp; &nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="debtusd" value="" placeholder="" id="debtusd" class="price pageRequired"> 
-                    <label for="debtusd" class="placeholder required">Существующий долг по кредиту (лизингу) в банке (в дол.США)&nbsp; &nbsp;<strong>*</strong>&nbsp;</label>
-                </div> 
-            </div> 
-    
+		
             <div class="moduleOnlineFormCredits--content--item w-50"> 
                 <div class="moduleOnlineFormCredits--content--item--wraps">
                     <input type="text" name="address" value="" placeholder="" id="address" class="pageRequired"> 
                     <label for="phone" class="placeholder required">Адрес&nbsp;<strong>*</strong>&nbsp;</label> 
                 </div>
             </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="email" name="email" value="" placeholder="" class="pageRequired" id="email"> 
-                    <label for="email" class="placeholder required">Электронная почта&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                 <div class="moduleOnlineFormCredits--content--item--wraps">  
-                    <input type="text" name="loanamount" value="" placeholder="" id="loanamount" class="price pageRequired"> 
-                    <label for="loanamount" class="placeholder required">Запрашиваемая сумма кредита (в сумах, тыс.)&nbsp;<strong>*</strong>&nbsp;</label> 
-                 </div> 
-            </div>
-
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                     <select class="pageRequired" id="currency" name="currency" required=""> 
-	                    <option selected="" disabled="">Валюта кредита</option> 
-		                    <option value="0">СУМ</option>
-		                    <option value="1">Доллар США</option> 
-		                    <option value="2">ЕВРО</option> 
-                    </select>                     
-                    <label for="currency" class="placeholder required">Валюта кредита&nbsp;<strong>*</strong>&nbsp;</label> 
-                 </div> 
-            </div>
-
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="loanpurpose" value="" placeholder="" id="loanpurpose" class="pageRequired"> 
-                    <label for="loanpurpose" class="placeholder required">Цель кредита&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-    
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="number" name="loanduration" value="" placeholder="" id="loanduration" class="pageRequired">
-                    <label for="loanduration" class="placeholder required">Срок кредита, месяцев&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-            </div> 
-
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="loanpledge" value="" placeholder="" id="loanpledge" class="pageRequired"> 
-                    <label for="loanpledge" class="placeholder required">Предлагаемый залог&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-             </div> 
-
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <input type="text" name="loanpledgenameandaddress" value="" placeholder="" id="loanpledgenameandaddress" class="pageRequired"> 
-                    <label for="loanpledgenameandaddress" class="placeholder required">Название и адрес предлагаемего залога&nbsp;<strong>*</strong>&nbsp;</label> 
-                </div> 
-             </div> 
-         
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <div class="moduleOnlineFormCredits--content--item--wraps selectArrow"> 
-                        <select class="pageRequired" id="branch" name="branch"> 
-                            <option selected="" disabled="">Подходящий филиал банка</option> 
-                            <option value="01008">Филиал 'Авиастроительный' (г.Ташкент, Яшнаабадский р-н, ул. Алимкент 5)</option> 
-                            <option value="00988">Алмалыкский филиал (Ташкентская обл., г.Алмалык, ул.Мустакиллик 10)</option> 
-                            <option value="01149">Ангренский филиал (Ташкентская обл., г.Ангрен, ул.Ахангаран)</option> 
-                            <option value="00070">Асакинский филиал (Андижанский обл., Асакинский р-н, ул.Бобура 60)</option> 
-                            <option value="01126">Филиал 'Богишамол' (Самаркандская обл., г.Самарканд, ул. М.Кошгарий 498)</option> 
-                            <option value="00966">Бухарский филиал (Бухарский обл., г.Бухара, ул. К.Муртазаева 5)</option> 
-                            <option value="01118">Гулистанский филиал (Сырдарьинская обл., г.Гулистан, ул.Мустакиллик 121)</option> 
-                            <option value="01090">Денавский филиал (Сурхандарьинская обл., г.Денау, ул. Ш.Рашидова 255А)</option> 
-                            <option value="01117">Джиззакский филиал (Джиззакская обл., г.Джиззак, ул. Ш.Рашидова 35)</option> 
-                            <option value="00965">Истикбалский филиал (Ферганская обл., г.Фергана, ул. Б.Маргиланий 74)</option>
-                            <option value="00956">Кокандский филиал (Ферганская обл., г.Коканд, ул.Кипчокарик 98)</option> 
-                            <option value="01031">Каршинский филиал (Кашкадарынская обл., г.Карши, ул.Амира Темура 41)</option> 
-                            <option value="01003">Кувасайский филиал (Ферганская обл., г.Кувасай, ул. А.Навои 1)</option> 
-                            <option value="00071">Кургантепинский филиал (Андижанская обл., Кургантепинский р-н, ул. Мустакиллик 98)</option> 
-                            <option value="00991">Маргеланский филиал (Ферганская обл., г.Маргелан, ул. Б.Маргилоний 440 А)</option> 
-                            <option value="01064">Навоийский филиал (Навоийская обл., г.Навои, пр.Галаба 198-в)</option> 
-                            <option value="01156">Наманганский региональный (Наманганская обл., г. Наманган, ул. Амир Темура, 110)</option> 
-                            <option value="00079">Надирабегимский филиал (Андижанская обл., г.Андижан, ул.Базарная 2)</option> 
-                            <option value="01068">Нукусский филиал (Рес.Каракалпакстан, г.Нукус, ул.Амира Темура 135)</option> 
-                            <option value="00083">Оперу (Андижанская обл., г.Андижан, проспект Бабура 85)</option>
-                            <option value="01030">Самаркандский филиал (Самаркандская обл., г.Самарканд, ул.Амира Темура 149)</option> 
-                            <option value="00443">Ташкентский филиал (г.Ташкент, ул.Фурката 14)</option> 
-                            <option value="01001">Термезский филиал (Сурхандарьинская обл., г.Термез, ул.Ат Термизий 15А)</option> 
-                            <option value="01020">Ургенчский филиал (Хорезмская обл., г.Ургенч, ул.Пахлавона Махмуда 59)</option>
-                            <option value="01157">Ургутский филиал (Самаркандская обл., г.Ургут, пр.Навоий, 96)</option> 
-                            <option value="01164">Учтепинский филиал (г.Ташкент, Учтепинский район, ул.Хирмонтепа, д.39)</option> 
-                            <option value="01162">Хазараспский филиал (Хорезмская обл., Хазараспский р-н, ул.Гафура Гуляма, 9)</option> 
-                            <option value="01161">Хараземский региональный (Хорезмская обл., г. Ургенч, ул. Ёгду, 2/1)</option>
-                            <option value="01155">Ферганский региональный (Ферганская обл., г. Фергана, ул.Мураббийлар, 41)</option>
-                            <option value="00072">Хужаабадский филиал (Андижанская обл., Хужаабадский р-н, ул.Голос Узбекистана 25)</option> 
-                            <option value="01108">Чиланзарский филиал (г.Ташкент, Чиланзарский р-н, Д 20А квартал, дом-4а)</option> 
-                            <option value="00962">Чинабадский филиал (Андижанская обл., Баликчинский р-н, ул.Чинабадская 19)</option> 
-                            <option value="00960">Чиназский филиал (Ташкентская обл., Чиназский р-н, ул. Ш.Рашидова 12а)</option> 
-                            <option value="01159">Чирчикский филиал (Ташкентская обл., г. Чирчик, ул. А.Навои 4)</option> 
-                            <option value="01160">Чустский филиал (Наманганская обл., г. Чуст, Сероб МФЙ, ул. Истиклол, 21)</option>
-                            <option value="01127">Шайхантохурский филиал (г. Ташкент, Шайхантахурский р-н, проспект Беруни 12А)</option>
-                            <option value="00039">Шахриханский филиал (Андижанская обл., Шахриханский р-н, г.Шахрихан, ул.Хамзы 2)</option> 
-                            <option value="00992">филиал "Юксалиш" (Наманганская обл., г.Наманган, пр.А.Навои 31)</option> 
-                            <option value="01163">Юнусабадский филиал (г.Ташкент, Юнусабадский район, ул.Янги Шахар, д.59А)</option> 
-                            <option value="01013">Яккасарайский филиал (г.Ташкент, Яккасарайский р-н, ул. Усмана Насыра 57)</option> 
-                            <option value="00976">Янгиюльский филиал (Ташкентская обл., г.Янгиюль, ул.Самаркандская 215)</option> 
-                        </select> 
-                        <label for="branch" class="placeholder required">Подходящий филиал банка&nbsp;<strong>*</strong>&nbsp;</label> 
-                    </div> 
-                </div> 
-            </div> 
-
-            <div class="moduleOnlineFormCredits--content--item w-50"> 
-                <div class="moduleOnlineFormCredits--content--item--wraps"> 
-                    <div class="captcha"> <h4>CAPTCHA</h4> 
-                        <input type="hidden" name="captcha_sid" value="091d2cc30f9a651f3e3e0de76d6c0027"> 
-                        <input type="text" class="form-text pageRequired" name="captcha_word" value=""> 
-                        <img src="captcha.php" alt="CAPTCHA" width="180" class="captcha_pic"> 
-                    </div> 
-                </div> 
-            </div> 
-            
             <button type="submit" value="Submit"> <span>Отправить</span> </button>
 
         </div>
@@ -283,25 +72,8 @@
             "Email": "#email", // Email посетителя
             "Address": "#address", // Адрес посетителя
             "MobilePhone": "#phone" // Телефон посетителя
-//             "TsiOwnershipForm": "#ownershipForm", // Форма собственности
-//             "TsiAccountINN": "#inn", // ИНН
-//             "TsiActivityKind": "#mainactivity", // Вид деятельности
-//             "TsiHeadofCompany": "#headfullname", // ФИО руководителя предприятия
-//             "TsiStartBusinessYear": "#dateofbeginning", // Год начала предпринимательства
-//             "TsiNatMonthRevenue": "#avgincomeuzs", // Сред.мес. выручка (в нац. валюте, в сумах, тыс.)
-//             "TsiForMonthRevenue": "#avgincomeusd", // Среднемесячная выручка (в ин. валюте, в дол. США)
-//             "TsiEmployeesNumber": "#numberofemps", // Количество сотрудников
-//             "TsiNatDebtCredit": "#debtuzs", // Сущ. долг по кредиту в банке (в сумах, тыс.)
-//             "TsiForDebtCredit": "#debtusd", // Сущ. долг по кредиту в банке (в дол.США)
-//             "TsiRequestCreditAmount": "#loanamount", // Запрашиваемая сумма кредита (в сумах, тыс)
-//             "TsiCreditCurrency": "#currency", // Валюта кредита
-//             "TsiCreditPurpose": "#loanpurpose", // Цель кредита
-//             "TsiCreditTerm": "#loanduration", // Срок кредита, месяцев
-//             "TsiProposedGuaranty": "#loanpledge", // Предлагаемый залог
-//             "TsiAdressProposedGuaranty": "#loanpledgenameandaddress", // Название и адрес предлагаемего залога
-//             "TsiSuitedBranch": "#branch" // Подходящий филиал банка
         },
-        landingId: "a89b3398-1174-41ad-be19-16ae7219ab2c",
+        landingId: "47ab1c9e-8c21-4fd1-9a7d-b5a1bd3d80b2",
         serviceUrl: "https://localhost/HomeWork/ServiceModel/GeneratedObjectWebFormService.svc/SaveWebFormObjectData",
         redirectUrl: ""
     };
