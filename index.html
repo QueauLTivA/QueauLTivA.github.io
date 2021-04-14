@@ -4,14 +4,14 @@
       <meta charset="utf-8">
     </head>
     <body>
-      <label for = "name">Name</label>
+<!--       <label for = "name">Name</label>
       <input type="text" id ="name" name = "user_name">        
       <label for = "web">Web</label>
-      <input type="text" id ="web" name = "user_web"> 
+      <input type="text" id ="web" name = "user_web">  -->
     </body>
 </html>
 
-<script>
+<!-- <script>
 function receiver(event) {
     if (event.origin == 'http://localhost') {
           var val = document.getElementById('name').value;
@@ -21,4 +21,41 @@ function receiver(event) {
     }
 }
 window.addEventListener('message', receiver, false);
+</script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://webtracking-v01.bpmonline.com/JS/track-cookies.js"></script>
+<script src="https://webtracking-v01.bpmonline.com/JS/create-object.js"></script>
+<script>
+/**
+* Замените выражение в кавычках "css-selector" в коде ниже значением селектора элемента на Вашей лендинговой странице.
+* Вы можете использовать #id или любой другой CSS селектор, который будет точно определять поле ввода на Вашей лендинговой странице.
+* Пример: "Email": "#MyEmailField".
+* Если Ваша лендинговая страница не содержит одного или нескольких полей из приведенных ниже – оставьте строку без изменений или удалите полностью.
+*/
+var config = {
+    fields: {
+        "Name": "css-selector", // Имя посетителя, заполнившего форму
+        "Email": "css-selector", // Email посетителя
+        "Zip": "css-selector", // Почтовый индекс посетителя
+        "MobilePhone": "css-selector", // Телефон посетителя
+        "Company": "css-selector", // Название компании
+        "Industry": "css-selector", // Отрасль компании
+        "FullJobTitle": "css-selector", // Должность посетителя
+        "UseEmail": "css-selector", // Логическое значение «да» - согласие посетителя получать email рассылки
+        "City": "css-selector", // Город
+        "Country": "css-selector", // Страна
+        "Commentary": "css-selector" // Примечание
+    },
+    landingId: "47ab1c9e-8c21-4fd1-9a7d-b5a1bd3d80b2",
+    serviceUrl: "http://localhost/HomeWork/0/ServiceModel/GeneratedObjectWebFormService.svc/SaveWebFormObjectData",
+    redirectUrl: ""
+};
+/**
+* Функция ниже создает Лид из введенных данных.
+* Привяжите вызов этой функции к событию "onSubmit" формы или любому другому элементу события.
+* Пример: <form class="mainForm" name="landingForm" onSubmit="createLead(); return false">
+*/
+function createLead() {
+    landing.createLeadFromLanding(config)
+}
 </script>
